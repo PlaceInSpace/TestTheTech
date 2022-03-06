@@ -1,0 +1,102 @@
+<html>
+<head>
+
+  <style>
+    .Ticc {
+      width: 700px;
+      height: 400px;
+      padding: 10px;
+
+      margin: 0;
+      background-color: #CBC3E3;
+      border-radius: 12px;
+    }
+    .Ticc1 {
+      width: 700px;
+      height: 200px;
+      padding: 10px;
+
+      margin: 0;
+      background-color: #CBC3E3;
+      border-radius: 12px;
+    }
+  </style>
+    
+   <link rel='stylesheet' href="{{ url_for('static', filename='homepage.css') }}">
+</head>
+<body style="background-color:#ffffe0!important;">
+<center>
+  {% if user == post.user.id %}
+    <br>
+    <br>
+
+      <a href="/remove/{{post.id}}">
+      <button class="dropbtn" style="background-color:red!important;">
+      Delete
+    </button></a>
+    <br></br>
+    <br></br>
+  {% endif %}
+
+
+
+<div class="Ticc">
+
+
+    <h3 style="color: black !important;">Made by {{post.user.username}}</h3>
+    <h3 style="color: black !important;">Application Name:</h3>
+    <h1 style="color: black !important;">{{ post.title }}</h1>
+    
+    <h3 style="color: black !important;">Summary:</h3>
+    <h2 style="color: black !important;">{{ post.text }}</h2>
+    <h3 style="color: black !important;">Download Instructions:</h3>
+    <h2 style="color: black !important;">{{ post.instuctions }}</h2>
+  
+
+
+
+    <a href="/download/{{post.id}}">
+      <button class="dropbtn">
+      Download ZIP file
+    </button></a><br></br>
+
+    <a href="/give-feedback/{{post.id}}">
+      <button class="dropbtn">
+      Give Feedback
+    </button></a>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+    {% for comment in comments %}
+
+  
+  <div class="Ticc1">
+    <h1 style="color:black!important;">{{comment.title}}</h1>
+    <h3 style="color:black!important;">{{comment.text}}</h3>
+    <h2 style="color: black !important;">Rating: {{comment.rating}}/5</h2>
+
+    {% if comment.author == user %}
+
+    <a href="/remove/comment/{{comment.id}}">
+      <button class="dropbtn" style="background-color:red!important;">
+      Delete
+    </button></a>
+    
+    {% endif %}
+  </div>
+
+    <br>
+  {% endfor %}
+
+
+</center>
+
+ 
+
+  
+</body>
+</html>

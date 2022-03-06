@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://easycss.bookie0.repl.co/light.css" rel="stylesheet" type="text/css">
+  <title>Document</title>
+</head>
+  
+<body>
+  <center>
+  <form method="POST" enctype="multipart/form-data">
+    <h3>Title:</h3><br></br>
+    <input type="text" name="title" id="title"></input><br></br>
+    <h3>Summery:</h3><br></br>
+    <textarea name="text" id="text"></textarea>
+    <h3>Instructions:</h3><br></br>
+    <textarea name="instructions" id="instructions"></textarea><br>
+  </br>
+    <label class="file-selector">
+    <input accept=".zip" name="file" type="file">
+    Upload Project ZIP
+    </label>
+    <br></br>
+    <br></br>
+
+  
+    <div align="center">
+      <button type="submit"> Post! </button>
+    </div>
+  </form>
+</body>
+  </center>
+</html>

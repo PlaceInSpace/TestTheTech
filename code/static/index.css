@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:wght@300&display=swap');
+
+body{
+  background:#CBC3E3;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  color: green;
+  font-size: 50px;
+}
+
+
+h2, h3 {
+  color: green;
+}
+.cll {
+  color: white !important;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 25px 50 !important;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+button {
+  background-color: teal;
+  height: 50px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  width: 135px;
+  border: 0;
+  border-radius: 14px;
+}
+
+button:hover {
+  box-shadow: 0 0 40px rgba(108, 208, 255, 0.52); 
+}
+
+
+
+.hope {
+  float: left;
+  
+}
+.box {
+  background-color: teal;
+  width: 350px;
+  border-radius:15px;
+  font-size: 30px;
+  border: 15px solid rgb(12, 45, 83);
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  padding: 50px;
+  height: 200px;
+  margin: 20px;
+}
+
+.box:hover  {
+  box-shadow: 0 0 40px rgba(108, 208, 255, 0.52); 
+}
+/*
+.grid-container:hover {
+  box-shadow: 0 0 40px rgba(108, 208, 255, 0.52); 
+}
+*/
+/*NAVIGATION BAR */
+/*
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 12px;
+  
+}
+
+li {
+  float: left;
+  align-self: center;
+}
+
+
+input[type="text"] {
+  height:25px;
+  font-size:20px;
+  border:2px solid #7289DA;
+  border-radius:10px;
+  width:500px;
+}
+
+
+li a {
+  display: block;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 12px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  align-self: center;
+}
+
+li a:hover {
+  background-color: lightgray;
+}
+*/
+
+/* SCROLL 1*/
+
+.scroll {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 25px;
+}
+
+/* NavBar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*background-color: #24252A;*/
+  font-family: 'Ubuntu', sans-serif
+}
+
+nav{
+  background: #222222;
+  padding: 10px 40px 10px 70px;
+  border: 1px solid teal;
+  border-left: none;
+  border-right: none;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li.logo{
+  flex: 1;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff
+}
+
+ul div.items{
+  padding: 0 25px;
+  display: inline-flex;
+}
+
+nav ul div.items a{
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 12px;
+  color: #ffffff
+}
+
+nav ul div.items a:hover{
+  color: aqua;
+}
+
+nav ul .search-icon{
+  height: 40px;
+  width: 240px;
+  display: flex;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+
+nav ul .search-icon input{
+  height: 100%;
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  color: #000;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+}
